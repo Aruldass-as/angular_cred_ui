@@ -1,0 +1,23 @@
+<div class="container login-container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card p-4">
+                <h4 class="text-center">
+                    <!-- <span class="material-icons-outlined text-primary">
+                        lock
+                        </span> -->
+                   User Login</h4>
+                <form [formGroup]="loginForm">
+                <label for="name">username</label>
+                <input type="text" formControlName="username" autocomplete="new-username"/>
+                    
+                <label for="name">password</label>
+                <input type="password" formControlName="password" autocomplete="new-password"/>
+
+                <button type="submit" (click)="getval()" [disabled]="!loginForm.valid">login</button>
+                <button type="submit" (click)="gotoSignup()">Sign-Up</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div>   

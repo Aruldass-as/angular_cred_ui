@@ -1,0 +1,29 @@
+<div class="container login-container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card p-4">
+                <h1>Sign-Up Page</h1>
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+<label for="name">Name</label>
+<input type="text" formControlName="name"  autocomplete="new-name"/>
+
+<label for="email">Email</label>
+<input type="text" formControlName="email" autocomplete="new-email"/>
+
+<label for="phoneNo">Phone No</label>
+<input type="number" formControlName="phoneNo" autocomplete="new-phoneNo"/>
+
+<label for="username">Username</label>
+<input type="text" formControlName="username" autocomplete="new-username"/>
+
+<label for="password">Password</label>
+<input type="password" formControlName="password" autocomplete="new-password"/>
+
+<button type="submit" [disabled]="!signupForm.valid">Sign-Up</button>
+</form>
+        </div>
+    </div>
+</div>
+</div>
+
+
