@@ -1,9 +1,13 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
+    "defaultProject": "angular_cred_ui",
   "projects": {
-    "angular12": {
+    "angular_cred_ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -113,6 +117,5 @@
         }
       }
     }
-  },
-  "defaultProject": "angular12"
+  }
 }
